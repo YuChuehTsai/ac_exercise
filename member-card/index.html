@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h3>Costumize your namecard</h3>
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+        <div class="feedback small"></div>
+      </div>
+      <!-- Link -->
+      <div class="form-group">
+        <input type="url" class="form-control" id="photo" placeholder="Link to your photo">
+        <div class="feedback small"></div>
+      </div>
+      <!-- Introduce -->
+      <div class="form-group">
+        <textarea class="form-control" id="introduce" placeholder="Introduce yourself in 200 words."
+          rows="5"></textarea>
+        <div class="feedback small"></div>
+      </div>
+      <!-- Theme -->
+      <div class="form-group" id="choose-theme">
+        <p class="custom-control-inline">Choose the theme: </p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="light theme" value="light">
+          <label class="custom-control-label" for="light theme">Light theme</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" name="inlineRadioOptions" id="dark theme" value="dark">
+          <label class="custom-control-label" for="dark theme">Dark theme</label>
+        </div>
+        <div class="feedback small"></div>
+      </div>
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- after the submit show the result -->
+    <div id="passOrNot">
+
+    </div>
+
+    <!-- name card -->
+    <div class="my-card p-4 clearfix" id="name-card">
+
+    </div>
+  </div>
+
+  </div>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="index.js"></script>
+</body>
+
+</html>
